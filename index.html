@@ -18,7 +18,7 @@
 
 
 <body class="d-flex h-100 text-center" style="height:100vh !important;
-        background-image: url('https://www.img.in.th/images/582d241ae27dc4ea010cadda453d8192.gif');
+        background-image: url('https://www.img.in.th/images/56bdfab22a37aa191f7b98a2bbe3db51.gif');
         /* background: linear-gradient(to bottom,#51010a 40%,#55000a 80%); */
         background-repeat: no-repeat;
         background-size: cover;
@@ -29,13 +29,13 @@
     <main class="card-columns mx-auto d-flex justify-content-center col-12 col-sm-6">
       <div class="card" style="background: rgb(0 0 0 / 60%);margin-top: 0px;border: 0px;border-radius: 15px;">
         <div class="card-body p-3 p-sm-4">
-          <!--img src="https://www.img.in.th/images/c9910b5a4aa78cacfd657fcf83b7f677.jpg" class="img-fluid" style="width: 50%;"-->
+          <!--img src="https://www.img.in.th/images/7d7086605e06da78de2fae938121824d.jpg" class="img-fluid" style="width: 50%;"-->
           <!--ส่วนรูปโปรโมชั่น และ ลิ้งออกจากรูปภาพ-->
-          <img src="https://www.img.in.th/images/c9910b5a4aa78cacfd657fcf83b7f677.jpg" class="img-fluid" style="width: 450px;border-radius: 15px;">
+          <img src="https://www.img.in.th/images/7d7086605e06da78de2fae938121824d.jpg" class="img-fluid" style="width: 450px;border-radius: 15px;">
           
-          <p class="lead mb-4 mt-3" style="font-family: 'Kanit', sans-serif;font-size: 28px;font-weight: 500;">แชร์เพื่อปลดล็อก </p>
+          <p class="lead mb-4 mt-3" style="font-family: 'Kanit', sans-serif;font-size: 28px;font-weight: 500;">แชร์ให้เพื่อนเพื่อปลดล็อค</p>
           <div class="d-grid gap-2 col-10 mx-auto">
-            <button class="btn btn-primary btn-lg text-nowrap mb-2" id="btnShare" onclick="sendShare()" style="font-family: 'Kanit', sans-serif;">เเชร์เลย</button>
+            <button class="btn btn-primary btn-lg text-nowrap mb-2" id="btnShare" onclick="sendShare()" style="font-family: 'Kanit', sans-serif;">แชร์เลย</button>
           </div>
         </div>
       </div>
@@ -52,10 +52,10 @@
     async function sendShare() {
       const result = await liff.shareTargetPicker([{
         "type": "flex",
-        "altText": "แจกโค๊สฟรี50เคดิด",
+        "altText": "แจทุนกฟรี 50 เครดิต",
     "type": "flex",
     "contents": {
-      "  type": "bubble",
+      "type": "bubble",
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -66,10 +66,13 @@
         "contents": [
           {
             "type": "image",
-            "url": "https://www.img.in.th/images/c9910b5a4aa78cacfd657fcf83b7f677.jpg",
+            "url": "https://www.img.in.th/images/7d7086605e06da78de2fae938121824d.jpg",
             "size": "full"
           }
-        ]
+        ],
+        "borderColor": "#000000",
+        "borderWidth": "bold",
+        "cornerRadius": "lg"
       },
       {
         "type": "box",
@@ -77,23 +80,41 @@
         "contents": [
           {
             "type": "text",
-            "text": "1.สมาชิกใหม่รับฟรี 🎰",
-            "color": "#FF9933",
-            "margin": "lg",
-            "size": "lg"
+            "text": "SPINIX69",
+            "align": "center",
+            "color": "#FFFAFA",
+            "weight": "bold",
+            "size": "xl"
           },
           {
             "type": "text",
-            "text": "2.โค๊ด 50 เครดิด 🎰",
-            "size": "lg",
-            "color": "#FF9933"
+            "text": "slot and casino online",
+            "align": "center",
+            "offsetBottom": "md",
+            "color": "#FF6600"
+          }
+        ],
+        "spacing": "none",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "✅ แจกโค้ดฟรี 50 เครดิต",
+            "color": "#FF6600"
           },
           {
             "type": "text",
-            "text": "3.ไม่ต้องฝาก ถอนได้จริง 🎰",
-            "size": "lg",
-            "color": "#FF9933",
-            "margin": "none"
+            "text": "✅ สมัครสมาชิกรับฟรี",
+            "color": "#FF6600"
+          },
+          {
+            "type": "text",
+            "text": "✅ รับได้ทุกยูส ไม่จำกัด",
+            "color": "#FF6600"
           }
         ]
       },
@@ -105,23 +126,33 @@
             "type": "button",
             "action": {
               "type": "uri",
-              "label": "คลิกเลย",
+              "label": "คลิกรับเลย",
               "uri": "https://lin.ee/x8mHlr7"
             },
-            "color": "#00FF00",
+            "height": "sm",
             "style": "primary",
-            "offsetBottom": "none",
-            "margin": "lg",
-            "height": "sm"
+            "color": "#FF6600"
           }
-        ]
+        ],
+        "margin": "none",
+        "spacing": "none",
+        "offsetBottom": "none",
+        "offsetTop": "md"
       }
     ],
     "background": {
       "type": "linearGradient",
       "angle": "0deg",
       "startColor": "#000000",
-      "endColor": "#CC9900"
+      "endColor": "#FF9900"
+    },
+    "borderColor": "#000000",
+    "borderWidth": "bold",
+    "cornerRadius": "xl"
+  },
+  "styles": {
+    "body": {
+      "separator": true
     }
   }
 }
